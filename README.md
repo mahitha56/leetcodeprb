@@ -106,7 +106,6 @@ Even though "sad" appears twice,
 
 ✅ Start searching from index
 s = "sadbutsad"
-
 print(s.find("sad", 1))
 
 
@@ -121,3 +120,11 @@ Starts search from index 1.
 Method	Not found
 find()	-1
 index()	Error ❌
+
+#
+class Solution:
+    def strStr(self, haystack: str, needle: str) -> int:
+        haystack1=haystack.lower()
+        neddle1=needle.lower()
+        pos=haystack1.find(neddle1)
+        return pos
