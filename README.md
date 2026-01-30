@@ -129,4 +129,8 @@ print(t)  # [1, 2, 3] -> t remains unchanged
 ✅ So s[:] = s[::-1] is used when you want to reverse a list in-place, preserving references to the original list.
 
 If you want, I can make a tiny visual diagram to show the difference between s = s[::-1] and s[:] = s[::-1] — it makes this concept super clear.
-
+#
+prblm
+  s[:] = s[::-1]
+        return s      
+        
