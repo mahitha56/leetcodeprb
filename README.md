@@ -38,3 +38,18 @@ g ↔ d
 
 
 Exactly what we need for isomorphic!
+
+
+Problem:
+     class Solution:
+    def isIsomorphic(self, s: str, t: str) -> bool:
+        maps={}
+        mapt={}
+        for i,j in zip(s,t):
+            if i in maps and maps[i]!=j:
+                return False
+            if j in mapt and mapt[j]!=i:
+                return False
+            maps[i]=j
+            mapt[j]=i
+        return True
